@@ -3,8 +3,8 @@
 <!  
     NAME: Amyah Chambers
     DESCRIPTION: This program will find the number of school buses needed for a field trip.
-        NOTES: Maximum 95 riders per bus
-               One school van with maximum of 60 riders
+        NOTES: Maximum 20 riders per bus
+               One school van with maximum of 5 riders
                If number of riders (or bus overflow) is less than 6, the school van should be used.
                No overloading permitted on any school vehicle.
     >
@@ -14,10 +14,10 @@
     function findnumbuses()
     {
         //define variables
-            const maxbusriders=95;
-            var numriders=62;
+            const maxbusriders=20;
+            var numriders=0;
             var numbuses=0;
-            var vanriders=3;
+            var vanriders=0;
             var remainder=0;
         //get data from user
                 numriders=prompt("Enter the number of riders going on the field trip:");
