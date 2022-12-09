@@ -11,7 +11,7 @@ SALES_TAX_RATE = .055
 PR_TICKET = 10.99
 
 # define global variables
-num_tickets = 5
+num_tickets = 0
 subtotal = 0
 sales tax = 0
 total = 0
@@ -32,7 +32,7 @@ def get_user_data():
         sales_tax = subtotal * SALES_TAX_RATE
         total = subtotal + sales_tax
 
-def display_results('8,.2f'):
+def display_results():
     print('------------------------------')
     print('**** CINEMA HOUSE MOVIES ****')
     print('Your neighborhood movie house')
